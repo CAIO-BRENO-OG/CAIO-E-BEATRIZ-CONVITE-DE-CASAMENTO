@@ -1,0 +1,58 @@
+
+<div style="font-family:Georgia,serif;text-align:center;color:#36536f;background:#f8fbfe;border:1px solid #dce8f1;border-radius:18px;padding:24px 12px;">
+  <p style="letter-spacing:3px;color:#718da5;">NOSSO GRANDE DIA</p>
+  <h2>Contagem regressiva</h2>
+  <p>17 de janeiro de 2027 · 16h</p>
+
+  <div style="display:flex;justify-content:center;gap:8px;flex-wrap:wrap;">
+    <div style="background:#e8f1f8;padding:14px;border-radius:10px;min-width:65px;">
+      <strong id="dias" style="font: bold 28px Arial;">---</strong><br>Dias
+    </div>
+    <div style="background:#e8f1f8;padding:14px;border-radius:10px;min-width:65px;">
+      <strong id="horas" style="font: bold 28px Arial;">--</strong><br>Horas
+    </div>
+    <div style="background:#e8f1f8;padding:14px;border-radius:10px;min-width:65px;">
+      <strong id="minutos" style="font: bold 28px Arial;">--</strong><br>Minutos
+    </div>
+    <div style="background:#e8f1f8;padding:14px;border-radius:10px;min-width:65px;">
+      <strong id="segundos" style="font: bold 28px Arial;">--</strong><br>Segundos
+    </div>
+  </div>
+
+  <p id="mensagem" style="font-style:italic;margin-top:22px;">
+    Estamos contando os dias para o nosso sim!
+  </p>
+</div>
+
+<script>
+(function () {
+  const dataCasamento = Date.UTC(2027, 0, 17, 19, 0, 0);
+
+  function atualizar() {
+    let restante = dataCasamento - Date.now();
+
+    if (restante <= 0) {
+      document.getElementById("dias").textContent = "00";
+      document.getElementById("horas").textContent = "00";
+      document.getElementById("minutos").textContent = "00";
+      document.getElementById("segundos").textContent = "00";
+      document.getElementById("mensagem").textContent =
+        "Hoje é o nosso grande dia!";
+      return;
+    }
+
+    const dias = Math.floor(restante / 86400000);
+    const horas = Math.floor((restante % 86400000) / 3600000);
+    const minutos = Math.floor((restante % 3600000) / 60000);
+    const segundos = Math.floor((restante % 60000) / 1000);
+
+    document.getElementById("dias").textContent = dias;
+    document.getElementById("horas").textContent = String(horas).padStart(2, "0");
+    document.getElementById("minutos").textContent = String(minutos).padStart(2, "0");
+    document.getElementById("segundos").textContent = String(segundos).padStart(2, "0");
+  }
+
+  atualizar();
+  setInterval(atualizar, 1000);
+})();
+</script>

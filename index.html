@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#eaf3fa">
+  <meta name="description" content="Convite de casamento de Beatriz e Caio. Será uma alegria celebrar esse momento com você.">
+  <title>Beatriz & Caio | Nosso casamento</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#inicio">B <span>&</span> C</a>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav id="nav">
+      <a href="#inicio">Início</a>
+      <a href="#historia">Nossa história</a>
+      <a href="#cerimonia">Cerimônia</a>
+      <a href="#informacoes">Informações</a>
+      <a href="#presenca">Confirme sua presença</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero botanical" id="inicio">
+      <p class="eyebrow">Com a bênção de Deus e de nossas famílias</p>
+      <h1>Vamos nos casar!</h1>
+      <p class="intro">A alegria de viver esse momento será ainda maior com a sua presença.</p>
+      <div class="ornament"><span>♡</span></div>
+      <p class="invite-line">Com carinho, convidamos você para celebrar nosso casamento</p>
+      <h2 class="couple-name"><span data-config="bride">Beatriz</span> <i>&</i> <span data-config="groom">Caio</span></h2>
+      <div class="hero-date">
+        <span class="weekday" id="weekday">DOMINGO</span>
+        <strong id="date-large">17.01.2027</strong>
+        <span id="time-large">ÀS 16:00</span>
+      </div>
+      <a class="primary-button" href="#cerimonia">Conheça os detalhes <span>↓</span></a>
+    </section>
+
+    <section class="section countdown-section">
+      <p class="eyebrow">Um dia que ficará para sempre em nossos corações</p>
+      <h2>Contagem regressiva</h2>
+      <p class="section-lead">Falta pouco para o nosso grande dia!</p>
+      <div class="countdown" aria-live="polite">
+        <div><strong id="days">—</strong><span>Dias</span></div>
+        <div><strong id="hours">—</strong><span>Horas</span></div>
+        <div><strong id="minutes">—</strong><span>Minutos</span></div>
+        <div><strong id="seconds">—</strong><span>Segundos</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="cerimonia">
+      <p class="eyebrow">O momento mais importante</p>
+      <h2>Cerimônia</h2>
+      <p class="section-lead">Será uma alegria imensa celebrar este sacramento e receber suas orações.</p>
+      <div class="details-card">
+        <div class="detail">
+          <span class="detail-icon">▦</span>
+          <div><b>Data e horário</b><span id="ceremony-date">Domingo, 17 de janeiro de 2027</span><span id="ceremony-time">Às 16:00</span></div>
+        </div>
+        <div class="detail">
+          <span class="detail-icon">⌖</span>
+          <div><b>Local da cerimônia</b><span data-config="venue">Nome da igreja</span><span data-config="address">Endereço completo — Cidade/UF</span></div>
+        </div>
+      </div>
+      <a class="primary-button" id="map-link" href="#" target="_blank" rel="noopener">⌖ Ver localização no mapa</a>
+      <p class="small-note" id="map-note">O endereço e o link do mapa podem ser atualizados no arquivo config.js.</p>
+    </section>
+
+    <section class="section soft-section" id="historia">
+      <p class="eyebrow">Dois caminhos, uma história</p>
+      <h2>Nossa história</h2>
+      <p class="story-text" data-config="story">Nossa história é feita de carinho, companheirismo, fé e muitos momentos especiais. Agora, diante de Deus, iniciaremos um novo capítulo — e será uma alegria ter você conosco.</p>
+      <div class="photo-placeholder">
+        <span>♡</span>
+        <p>Um espaço para uma foto especial do casal</p>
+        <small>Edite a imagem em config.js e adicione o arquivo à pasta assets.</small>
+      </div>
+    </section>
+
+    <section class="section" id="informacoes">
+      <p class="eyebrow">Para aproveitar esse dia com tranquilidade</p>
+      <h2>Informações importantes</h2>
+      <div class="info-grid">
+        <article><span class="info-icon">◷</span><b>Chegue com antecedência</b><p>Se possível, chegue alguns minutos antes para se acomodar.</p></article>
+        <article><span class="info-icon">⌂</span><b>Cerimônia religiosa</b><p>Esperamos você para viver conosco esse momento de fé e união.</p></article>
+        <article><span class="info-icon">♡</span><b>Sua presença é o presente</b><p>O mais importante para nós é compartilhar esse dia com pessoas queridas.</p></article>
+        <article><span class="info-icon">♧</span><b>Traje</b><p data-config="dressCode"> esporte fino ou social</p></article>
+      </div>
+    </section>
+
+    <section class="section rsvp-section" id="presenca">
+      <p class="eyebrow">Esperamos por você!</p>
+      <h2>Confirme sua presença</h2>
+      <p class="section-lead">Para nos ajudar na organização, confirme sua presença pelo WhatsApp.</p>
+      <form id="rsvp-form" class="rsvp-form">
+        <label for="guest-name">Seu nome</label>
+        <input id="guest-name" name="name" type="text" placeholder="Digite seu nome" required>
+        <label for="guest-count">Quantidade de pessoas</label>
+        <select id="guest-count" name="count">
+          <option value="1">1 pessoa</option>
+          <option value="2">2 pessoas</option>
+          <option value="3">3 pessoas</option>
+          <option value="4">4 pessoas</option>
+          <option value="5">5 pessoas</option>
+        </select>
+        <button class="primary-button" type="submit">Confirmar pelo WhatsApp</button>
+      </form>
+      <p class="small-note">A confirmação abrirá uma conversa no WhatsApp; nenhuma mensagem será enviada automaticamente.</p>
+    </section>
+
+    <section class="closing botanical">
+      <div class="ornament"><span>♡</span></div>
+      <h2>Com amor,</h2>
+      <p class="closing-names"><span data-config="bride">Beatriz</span> & <span data-config="groom">Caio</span></p>
+      <p>“Assim, eles já não são dois, mas uma só carne.”<br><small>Mateus 19,6</small></p>
+      <p class="footer-date" id="footer-date">17 de janeiro de 2027 · 16h</p>
+    </section>
+  </main>
+  <footer>Feito com carinho para celebrar o nosso sim. <span>♡</span></footer>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

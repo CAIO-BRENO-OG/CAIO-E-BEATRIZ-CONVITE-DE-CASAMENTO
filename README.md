@@ -36,3 +36,6 @@ Dê dois cliques em `index.html` para abrir no navegador. Para testar a confirma
 - O GitHub Pages hospeda gratuitamente sites estáticos em repositórios públicos.
 - O formulário de presença abre o WhatsApp com uma mensagem pronta; o convidado ainda precisa tocar em Enviar.
 - Não coloque dados privados no repositório. O telefone de RSVP ficará visível no código público.
+
+
+Atualização: o menu superior foi removido; a navegação começa diretamente na página do convite.

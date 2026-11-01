@@ -62,16 +62,7 @@
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, "_blank", "noopener");
   });
 
-  const toggle = document.querySelector(".menu-toggle");
-  const nav = $("nav");
-  toggle.addEventListener("click", () => {
-    const open = nav.classList.toggle("open");
-    toggle.setAttribute("aria-expanded", String(open));
-  });
-  nav.querySelectorAll("a").forEach(a => a.addEventListener("click", () => {
-    nav.classList.remove("open");
-    toggle.setAttribute("aria-expanded", "false");
-  }));
+
 
   if (c.photo) {
     const placeholder = document.querySelector(".photo-placeholder");

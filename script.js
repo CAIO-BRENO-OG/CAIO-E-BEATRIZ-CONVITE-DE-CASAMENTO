@@ -14,7 +14,7 @@
 
   const target = new Date(c.date || "2027-01-17T16:00:00-03:00");
   const dateText = c.dateLabel || "17 de janeiro de 2027";
-  const timeText = c.timeLabel || "Às 16:00";
+  const timeText = c.timeLabel || "Às 16:00 H";
   $("date-large").textContent = target.toLocaleDateString("pt-BR", {day:"2-digit", month:"2-digit", year:"numeric", timeZone:"America/Sao_Paulo"}).replaceAll("/", ".");
   $("weekday").textContent = target.toLocaleDateString("pt-BR", {weekday:"long", timeZone:"America/Sao_Paulo"}).toUpperCase();
   $("time-large").textContent = timeText.toUpperCase();

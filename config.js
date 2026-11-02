@@ -8,7 +8,7 @@ window.WEDDING_CONFIG = {
   groom: "Caio",
   date: "2027-01-17T16:00:00-03:00",
   dateLabel: "17 de janeiro de 2027",
-  timeLabel: "Às 16:00",
+  timeLabel: "Às 16:00 H",
   venue: "Igreja São Pedro e São Paulo",
   mapUrl: "https://maps.app.goo.gl/QqU3Wm8ywWyEsVN17",
   whatsapp: "5583XXXXXXXXX",

@@ -67,3 +67,12 @@ footer{background:#f6ecdb!important}
 /* Padroniza tamanho e alinhamento dos quatro ícones de Informações importantes */
 #informacoes .info-grid .info-icon{display:flex;width:36px;height:36px;margin:0 auto 8px;align-items:center;justify-content:center;font-size:27px;line-height:1}
 #informacoes .info-grid .info-icon svg{display:block;width:24px;height:24px;flex:0 0 24px}
+
+/* Reforça o contraste das informações e das frases da confirmação de presença. */
+#informacoes .info-grid b,
+#informacoes .info-grid p,
+#informacoes .eyebrow,
+#presenca .eyebrow,
+#presenca .section-lead{color:#17243b!important}
+#presenca .eyebrow,
+#presenca .section-lead{font-weight:600}

@@ -10,3 +10,7 @@ body{color:#1d2e4d}
 .detail b,.info-grid b,.rsvp-form label{color:#1b2d4b;font-weight:600}
 .hero-date,.rsvp-form,.countdown,.section{color:#1d2e4d}
 .countdown span{color:#344967}
+
+
+/* Destaque das frases solicitadas no convite. */
+.emphasis-copy{color:#17243b!important;font-weight:700!important}

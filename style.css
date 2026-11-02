@@ -93,3 +93,7 @@ footer{background:#f6ecdb!important}
 #presenca .primary-button:hover {
   background: #70243a;
 }
+
+/* Espaço reservado para o monograma: substitua monograma.png pelo PNG definitivo. */
+.monogram-placeholder{width:112px;height:112px;margin:0 auto 18px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.monogram-placeholder img{display:block;width:100%;height:100%;object-fit:contain}

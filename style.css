@@ -63,3 +63,7 @@ footer{background:#f6ecdb!important}
 /* Ícone simples de cabide em Informações importantes. */
 #informacoes .info-icon.hanger-icon{display:flex;align-items:center;justify-content:center}
 #informacoes .info-icon.hanger-icon svg{display:block;width:31px;height:31px}
+
+/* Padroniza tamanho e alinhamento dos quatro ícones de Informações importantes */
+#informacoes .info-grid .info-icon{display:flex;width:36px;height:36px;margin:0 auto 8px;align-items:center;justify-content:center;font-size:27px;line-height:1}
+#informacoes .info-grid .info-icon svg{display:block;width:24px;height:24px;flex:0 0 24px}

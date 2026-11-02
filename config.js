@@ -13,5 +13,5 @@ window.WEDDING_CONFIG = {
   address: "Endereço completo — Cidade/UF",
   mapUrl: "https://www.google.com/maps",
   whatsapp: "5583XXXXXXXXX",
-  dressCode: "Esporte fino ou social",
+  dressCode: "Deixe o branco reservado para a noiva e o preto para outra ocasião.",
 };

@@ -44,3 +44,9 @@ footer{background:#f6ecdb!important}
 /* Botão de localização em marsala, com texto branco e em negrito. */
 #map-link{background:#8b3048;color:#fff;font-weight:700}
 #map-link:hover{background:#76263c}
+
+
+/* Ícones de calendário e localização e destaque dos dados da cerimônia. */
+.detail-icon{width:30px;min-width:30px;height:30px;display:flex;align-items:center;justify-content:center}
+.detail-icon svg{display:block;width:26px;height:26px}
+#ceremony-date,#ceremony-time,[data-config="venue"]{color:#17243b!important;font-weight:700!important}

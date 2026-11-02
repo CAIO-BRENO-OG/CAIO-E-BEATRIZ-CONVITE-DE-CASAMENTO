@@ -11,7 +11,6 @@
   setText("venue", c.venue);
   setText("address", c.address);
   setText("dressCode", c.dressCode);
-  setText("story", c.story);
 
   const target = new Date(c.date || "2027-01-17T16:00:00-03:00");
   const dateText = c.dateLabel || "17 de janeiro de 2027";
@@ -26,8 +25,6 @@
 
   const map = $("map-link");
   map.href = c.mapUrl || "https://www.google.com/maps";
-  if (!c.mapUrl || c.mapUrl === "https://www.google.com/maps") $("map-note").hidden = false;
-  else $("map-note").hidden = true;
 
   function updateCountdown() {
     const diff = target.getTime() - Date.now();
@@ -62,10 +59,4 @@
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, "_blank", "noopener");
   });
 
-
-
-  if (c.photo) {
-    const placeholder = document.querySelector(".photo-placeholder");
-    placeholder.innerHTML = `<img src="${c.photo}" alt="Foto de ${c.bride} e ${c.groom}">`;
-  }
 })();

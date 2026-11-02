@@ -14,6 +14,4 @@ window.WEDDING_CONFIG = {
   mapUrl: "https://www.google.com/maps",
   whatsapp: "5583XXXXXXXXX",
   dressCode: "Esporte fino ou social",
-  story: "Nossa história é feita de carinho, companheirismo, fé e muitos momentos especiais. Agora, diante de Deus, iniciaremos um novo capítulo — e será uma alegria ter você conosco.",
-  photo: "" // Exemplo: "assets/foto-casal.jpg"
 };

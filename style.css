@@ -39,3 +39,8 @@ footer{background:#f6ecdb!important}
 .botanical:before,
 .botanical:after{display:none!important}
 .countdown span{color:#fff!important;font-weight:700}
+
+
+/* Botão de localização em marsala, com texto branco e em negrito. */
+#map-link{background:#8b3048;color:#fff;font-weight:700}
+#map-link:hover{background:#76263c}

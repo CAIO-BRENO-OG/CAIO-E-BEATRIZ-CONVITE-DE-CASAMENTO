@@ -78,19 +78,18 @@ footer{background:#f6ecdb!important}
 #presenca .section-lead{font-weight:600}
 
 
-/* Botão de confirmação em marsala */
+/* Botão de confirmação em vermelho marsala */
 #presenca .rsvp-form {
   max-width: 320px;
+  margin: 25px auto 0;
   text-align: center;
 }
-
 #presenca .primary-button {
   width: 100%;
   background: #8b3048;
   color: #ffffff;
   font-weight: 600;
 }
-
 #presenca .primary-button:hover {
   background: #70243a;
 }

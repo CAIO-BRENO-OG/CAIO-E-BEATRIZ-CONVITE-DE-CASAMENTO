@@ -21,7 +21,7 @@
   $("ceremony-date").textContent = dateText;
   $("ceremony-time").textContent = timeText;
   $("footer-date").textContent = `${dateText} · ${timeText.replace(/^Às /i, "")}`;
-  document.title = `${c.bride || "Beatriz"} & ${c.groom || "Caio"} | Nosso casamento`;
+  document.title = `${c.groom || "Caio"} & ${c.bride || "Beatriz"} | Nosso casamento`;
 
   const map = $("map-link");
   map.href = c.mapUrl || "https://www.google.com/maps";
@@ -55,7 +55,7 @@
       alert("Antes de publicar, informe o número de WhatsApp no arquivo config.js.");
       return;
     }
-    const message = `Olá! Sou ${name} e gostaria de confirmar minha presença no casamento de ${c.bride} e ${c.groom}. Somos ${count} pessoa(s).`;
+    const message = `Olá! Sou ${name} e gostaria de confirmar minha presença no casamento de ${c.groom} e ${c.bride}. Somos ${count} pessoa(s).`;
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, "_blank", "noopener");
   });
 

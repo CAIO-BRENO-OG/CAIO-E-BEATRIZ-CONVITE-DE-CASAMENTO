@@ -76,17 +76,21 @@ footer{background:#f6ecdb!important}
 #presenca .section-lead{color:#17243b!important}
 #presenca .eyebrow,
 #presenca .section-lead{font-weight:600}
-.monograma-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 30px auto 20px;
-    width: 100%;
+
+
+/* Botão de confirmação em marsala */
+#presenca .rsvp-form {
+  max-width: 320px;
+  text-align: center;
 }
 
-.monograma-container img {
-    width: 180px;
-    max-width: 60%;
-    height: auto;
-    object-fit: contain;
+#presenca .primary-button {
+  width: 100%;
+  background: #8b3048;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+#presenca .primary-button:hover {
+  background: #70243a;
 }

@@ -47,15 +47,12 @@
 
   $("rsvp-form").addEventListener("submit", (event) => {
     event.preventDefault();
-    const name = $("guest-name").value.trim();
-    const count = $("guest-count").value;
-    if (!name) return;
     const phone = (c.whatsapp || "").replace(/\D/g, "");
     if (!phone || phone.includes("X")) {
       alert("Antes de publicar, informe o número de WhatsApp no arquivo config.js.");
       return;
     }
-    const message = `Olá! Sou ${name} e gostaria de confirmar minha presença no casamento de ${c.groom} e ${c.bride}. Somos ${count} pessoa(s).`;
+    const message = `Olá! Gostaria de confirmar minha presença no casamento de ${c.groom} e ${c.bride}.`;
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, "_blank", "noopener");
   });
 

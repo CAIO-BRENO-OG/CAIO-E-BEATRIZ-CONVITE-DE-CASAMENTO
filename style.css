@@ -27,3 +27,15 @@ footer{background:#e9dcc8}
 .countdown div{background:#8b3048;border:1px solid #76263c;box-shadow:0 3px 10px rgba(80,25,42,.10)}
 .countdown strong{color:#fff;font-weight:600}
 .countdown span{color:#35151f;font-weight:700}
+
+/* Ajustes finais solicitados: fundo uniforme, sem adornos nas extremidades e rótulos brancos. */
+body,
+.hero,
+.section,
+.soft-section,
+.rsvp-section,
+.closing,
+footer{background:#f6ecdb!important}
+.botanical:before,
+.botanical:after{display:none!important}
+.countdown span{color:#fff!important;font-weight:700}

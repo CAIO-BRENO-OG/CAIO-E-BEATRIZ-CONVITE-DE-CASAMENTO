@@ -9,9 +9,9 @@ window.WEDDING_CONFIG = {
   date: "2027-01-17T16:00:00-03:00",
   dateLabel: "17 de janeiro de 2027",
   timeLabel: "Às 16:00",
-  venue: "Nome da igreja",
-  address: "Endereço completo — Cidade/UF",
-  mapUrl: "https://www.google.com/maps",
+  venue: "Igreja São Pedro e São Paulo",
+  address: "Localização disponível no mapa.",
+  mapUrl: "https://maps.app.goo.gl/QqU3Wm8ywWyEsVN17",
   whatsapp: "5583XXXXXXXXX",
   dressCode: "Deixe o branco reservado para a noiva e o preto para outra ocasião.",
 };

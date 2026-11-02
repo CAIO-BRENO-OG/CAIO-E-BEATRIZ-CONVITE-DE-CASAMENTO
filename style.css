@@ -14,3 +14,16 @@ body{color:#1d2e4d}
 
 /* Destaque das frases solicitadas no convite. */
 .emphasis-copy{color:#17243b!important;font-weight:700!important}
+
+/* Paleta em tom marfim quente e contagem regressiva em marsala. */
+body{background:#f6ecdb}
+.hero{background:radial-gradient(ellipse at 50% 40%,#fbf5eb 0,#f6ecdb 58%,#eee0ca 100%)}
+.section{background:linear-gradient(135deg,#f8f1e6,#f0e4d2);border-top-color:#e4d5c0}
+.soft-section{background:radial-gradient(ellipse at center,#fbf5eb,#f0e4d2)}
+.rsvp-section{background:linear-gradient(135deg,#f8f1e6,#efe2cf)}
+.closing{background:radial-gradient(ellipse at center,#fbf5eb,#f0e4d2)}
+footer{background:#e9dcc8}
+.details-card,.info-grid article,.photo-placeholder{background:rgba(255,250,242,.68);border-color:#e3d4bf}
+.countdown div{background:#8b3048;border:1px solid #76263c;box-shadow:0 3px 10px rgba(80,25,42,.10)}
+.countdown strong{color:#fff;font-weight:600}
+.countdown span{color:#35151f;font-weight:700}

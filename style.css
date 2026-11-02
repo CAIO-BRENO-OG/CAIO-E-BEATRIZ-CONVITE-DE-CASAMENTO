@@ -55,7 +55,11 @@ footer{background:#f6ecdb!important}
 /* Informações importantes: ícone de igreja e maior contraste nos textos. */
 #informacoes .eyebrow,
 #informacoes .info-grid b,
-#informacoes .info-grid p{color:#26334a!important}
+#informacoes .info-grid p{color:#17243b!important}
 #informacoes .info-grid b{font-weight:700}
 #informacoes .info-icon.church-icon{display:flex;align-items:center;justify-content:center}
 #informacoes .info-icon.church-icon svg{display:block;width:31px;height:31px}
+
+/* Ícone simples de cabide em Informações importantes. */
+#informacoes .info-icon.hanger-icon{display:flex;align-items:center;justify-content:center}
+#informacoes .info-icon.hanger-icon svg{display:block;width:31px;height:31px}
